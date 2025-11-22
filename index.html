@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Modelec</title>
+</head>
+<body>
+    <script>
+        // Script immédiat pour empêcher le scroll automatique vers le hash
+        (function() {
+            if (window.location.hash) {
+                // Retirer le hash de l'URL immédiatement
+                history.replaceState(null, null, window.location.pathname + window.location.search);
+                // Forcer le scroll vers le haut immédiatement
+                window.scrollTo(0, 0);
+                // S'assurer qu'on reste en haut pendant le chargement
+                document.addEventListener('DOMContentLoaded', function() {
+                    window.scrollTo(0, 0);
+                });
+            }
+        })();
+    </script>
+    <header>
+        <div class="navbar">
+            <nav>
+    <div class="logo">
+        <img src="/Logo/modelec1.svg" alt="Logo" width="37px" height="37px">
+        <h1>Modelec</h1>
+    </div>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul>
+    <li><a href="#Acceuil">Accueil</a></li>
+    <li><a href="#Notre_methode">Notre méthode</a></li>
+    <li><a href="#Pourquoi_nous_choisir">Pourquoi nous choisir</a></li>
+    <li><a href="#FAQ">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="mobile-btn"><a href="#contact"><button class="btn">Commencez maintenant</button></a></li>
+</ul>
+<a href="#contact" class="desktop-btn"><button class="btn">Commencez maintenant</button></a>
+</nav>
+        </div>
+    </header>
+
+    <section class="hero" id="Acceuil">
+        <div class="container">
+
+        <div class="hero-content-left">
+            <h3>ÉLECTRICIEN PROFESSIONNEL DANS LE TARN</h3>
+            <h1>L'Excellence <br>Électrique<br> avec Modelec</h1>
+            <p>Modelec, électricien dans le Tarn depuis plus de 10 ans :<br> installation, rénovation et dépannage pour particuliers<br> et professionnels.</p>
+            <img src="/img/mur.jpg" alt="mur">
+            </div>
+
+            <div class="hero-content-right">
+            <img src="/img/electricien.jpg" alt="electricien">
+        </div>
+        </div>
+        <div class="hero-content-bottom">
+            <p class="main-title">Approuvée par <font color="#1053D4">+200 clients</font> dans le Tarn et ses alentours.</p>
+        </div>
+    </section>
+
+    <section class="hero2" id="Notre_methode">
+        <div class="text-start">
+         <h3>NOTRE MÉTHODE</h3>
+         <h1>Comment faire appel à <br>nos services</h1>
+         <p>Un processus simple et rapide, du premier contact à la fin des travaux.</p>
+         </div>
+
+         <div class="card">
+            <div class="card1">
+                <h6>Step 1</h6>
+                <h4>Prenez rendez-vous</h4>
+                <p>Appelez-nous ou envoyez-nous un message pour choisir la date qui vous convient.</p>
+            </div>
+            <div class="card2">
+                <h6>Step 2</h6>
+                <h4>Diagnostic gratuit</h4>
+                <p>Nous venons sur place pour comprendre vos besoins et vous proposer un devis clair.</p>
+            </div>
+            <div class="card3">
+                <h6>Step 3</h6>
+                <h4>Intervention rapide</h4>
+                <p>Nous réalisons vos travaux rapidement et avec soin.</p>
+            </div>
+         </div>
+         <a href="#contact"><button class="btn2">Commencez maintenant</button></a>
+    </section>
+
+    <section class="hero3" id="Pourquoi_nous_choisir">
+        <div class="container2">
+            <div class="left-container">
+                <h5>POURQUOI NOUS CHOISIR ?</h5>
+                <h1>Un Service Électrique <br>Fiable et Professionnel</h1>
+                <div class="card4">
+                    <img src="/Logo/modelec1.svg" alt="ImageBox">
+                    <h1>Modelec</h1>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="upper-container">
+                <div class="exp">
+                <h1>10 +</h1>
+                <p>Années d'expérience</p>
+                </div>
+                <div class="br">
+                </div>
+                <div class="clt">
+                <h1>200 +</h1>
+                <p>Client satisfaits</p>
+                </div>
+            </div>
+            <div class="lower-container0">
+            <div class="lower-container1">
+                <div class="expm">
+                        <img src="/components/users.png" alt="Icon">
+                        <h1>Experimenté</h1>
+                        <p>Des installations sûres et<br> conformes aux normes.</p>
+                </div>
+                <div class="fiable">
+                    <img src="/components/users.png" alt="Icon">
+                    <h1>Fiable</h1>
+                    <p>Travail soigné et délais <br>respectés.</p>
+                </div>
+            </div>
+            <div class="lower-container2">
+                <div class="polyvalent">
+                    <img src="/components/users.png" alt="Icon">
+                    <h1>Polyvalent</h1>
+                    <p>Rénovation, dépannage, <br>installation.</p>
+                </div>
+                <div class="flexible">
+                    <img src="/components/users.png" alt="Icon">
+                    <h1>Flexible</h1>
+                    <p>Disponible et à l’écoute de vos besoins.</p>
+                </div>
+            </div>
+            </div>
+            <button class="btn3" onclick="window.location.href = '#contact';">commencez maintenant</button>
+        </div>
+    </section>
+    <section class="hero4">
+             <div class="elm">
+                    <div class="content-upper">
+                        <h5>ENGAGEZ LE MEILLEUR</h5>
+                        <h1>VOTRE ÉLECTRICIEN DE CONFIANCE</h1>
+                        <p>Des installations fiables, des interventions rapides et un savoir-faire<br> reconnu pour tous vos projets électriques.</p>
+                    </div>
+                    <div class="content-right">
+                        <div class="card5">
+                            <img src="/Logo/modelec1.svg" alt="ImageBox">
+                            <h1>Modelec</h1>
+                        </div>
+                    </div>
+                </div>
+             <div class="content-bottom">
+                        <div class="card-6" >  
+                        <div class="card6">
+                        <h5> Savoir-faire et sérieux</h5>
+                        <p>Un travail propre, conforme aux <br>normes et réalisé avec précision.</p>
+                        <a href="savoirfaire.html">En savoir plus</a>
+                    </div>
+                    <div class="card7">
+                        <h5>Intervention rapide</h5>
+                        <p>Disponible et réactif pour tous vos dépannages urgents.</p>
+                        <a href="Interventionarpide.html">En savoir plus</a>
+                    </div>
+                    <div class="card8">
+                        <h5>Conseils personnalisés</h5>
+                        <p>Des solutions adaptées à votre logement et à votre budget.</p>
+                        <a href="conseil.html">En savoir plus</a>
+                    </div>
+                    </div>
+    </section>
+
+    <section class="hero5" id="FAQ">
+        <div class="container3">
+            <div class="content-left1">             
+                <h5>FAQs</h5>
+                <p>Retrouvez ici les réponses aux questions les plus fréquentes.</p>
+            </div>
+            <div class="content-right1">
+                <div class="faqblock">
+                    <img src="/Logo/modelec1.svg" alt="ImageBox">
+                </div>
+                <div class="wrapper">
+                        <div class="container6">
+                        <div class="question">Quels sont vos délais d'intervention ?</div>
+                        <div class="answercont">
+                    <div class="answer">
+Pour les dépannages urgents, nous intervenons dans les 24 heures. Pour les travaux planifiés (rénovation, installation), nous fixons ensemble un rendez-vous selon vos disponibilités, généralement sous 3 à 5 jours.<br><br>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container6">
+    <div class="question">
+      Intervenez-vous uniquement dans le Tarn ?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+      Nous intervenons principalement dans le Tarn (Albi, Gaillac, Castres, Graulhet...) mais aussi dans les départements voisins : Tarn-et-Garonne, Aveyron (Rodez) et au-delà selon les projets. N'hésitez pas à nous contacter, nous étudions chaque demande !<br><br>
+      </div>
+    </div>
+  </div>
+  
+      <div class="container6">
+    <div class="question">Quels types de travaux réalisez-vous ?</div>
+    <div class="answercont">
+      <div class="answer">
+      Nous réalisons tous types de travaux électriques : installation complète (neuf et rénovation), mise aux normes, dépannage (pannes, disjoncteurs...), éclairage, tableaux électriques, prises et interrupteurs, etc. Que ce soit pour les particuliers ou les professionnels.<br><br>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container6">
+    <div class="question">
+      Comment vous contacter pour une urgence ?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+        En cas d'urgence (panne totale, problème de sécurité), vous pouvez nous joindre par téléphone (0627235306) ou via le formulaire de contact en précisant qu'il s'agit d'une urgence. Nous vous rappelons rapidement pour organiser l'intervention.
+   
+      </div>
+    </div>
+  </div>
+  
+  <div class="container6">
+    <div class="question">
+      Travaillez-vous avec des particuliers et des professionnels ?
+    </div>
+    <div class="answercont">
+      <div class="answer">
+     Oui ! Nous intervenons aussi bien auprès des particuliers (maisons, appartements) que des professionnels (commerces, bureaux, locaux industriels). Chaque projet est étudié avec la même rigueur et le même professionnalisme.<br><br>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="info-contact" id="contact">
+            <div class="container10">
+                <div class="background">
+                    <div class="content-left2">
+                        <div class="contact-info">
+                        <h1>Information de contact</h1>
+                        <p>Contactez-nous pour votre projet!</p>
+                        </div>
+                        <div class="contact-item-main">
+                            <div class="contact-item">
+                                <div class="c1">
+                                <img src="/components/phone-call.png" alt="telephone">
+                                <p>06 27 23 53 06</p>
+                                </div>
+                                <div class="c2">
+                                <img src="/components/email.png" alt="mail" width="32px">
+                                <p>modelec81@gmail.com</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="content-rightcontact">
+                         <div class="form-container">
+        <form id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Prénom</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nom</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+33 6 27 23 53 06" required>
+                </div>
+            </div>
+
+            <div class="subject-section">
+                <h3>Sujet</h3>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="subject1" name="subject" value="General Inquiry" checked>
+                        <label for="subject1">Installation</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="subject2" name="subject" value="General Inquiry">
+                        <label for="subject2">dépannage </label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="subject3" name="subject" value="General Inquiry">
+                        <label for="subject3">Rénovation</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Rédigez votre message.." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+    </div>
+
+            </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo-footer">
+                    <img src="Logo/mainmodelec1.png" width="37px" height="37px">
+                    <h1>Modelec</h1>
+                    </div>
+                    <p>L'Excellence Électrique avec Modelec</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right-left">
+                        <h6>Company</h6>
+                        <ul>
+                            <li><a href="#Acceuil">Accueil</a></li>
+                            <li><a href="#Notre_methode">Notre méthode</a></li>
+                            <li><a href="#Pourquoi_nous_choisir">Pourquoi nous choisir</a></li>
+                            <li><a href="#FAQ">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-right-right">
+                        <h6>Ressources</h6>
+                        <ul>
+                            <li><a href="#Acceuil">Electrical Safety</a></li>
+                            <li><a href="#Notre_methode">Blog</a></li>
+                            <li><a href="#Pourquoi_nous_choisir">Energy Efficiency</a></li>
+                            <li><a href="#FAQ">Youtube Channel</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="footer-mention">
+                    <p>© 2025 Modelec. Tous droits réservés.</p>
+                </div>
+    </section>
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    
+document.addEventListener("DOMContentLoaded", () => {
+    // --- Remettre à la page d'accueil au refresh si hash présent ---
+    if (window.location.hash) {
+        // Retirer le hash de l'URL et scroll vers le haut
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+        window.scrollTo(0, 0);
+        // Force le scroll plusieurs fois pour s'assurer qu'on reste en haut
+        setTimeout(() => window.scrollTo(0, 0), 0);
+        setTimeout(() => window.scrollTo(0, 0), 10);
+        setTimeout(() => window.scrollTo(0, 0), 50);
+    }
+    
+    // --- Script Smooth Scroll avec offset pour la navbar ---
+    const navbar = document.querySelector('.navbar');
+    const allLinks = document.querySelectorAll('a[href^="#"]');
+    
+    allLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            // Ignorer les liens vides ou juste "#"
+            if (href === '#' || href === '') {
+                return;
+            }
+            
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                e.preventDefault();
+                
+                // Calculer dynamiquement la hauteur de la navbar
+                const navbarHeight = navbar ? navbar.offsetHeight : 73;
+                const targetPosition = targetElement.offsetTop - navbarHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // --- Script FAQ ---
+    const questions = document.querySelectorAll(".question");
+    questions.forEach(question => {
+        question.addEventListener("click", () => {
+            const active = document.querySelector(".question.active");
+            if (active && active !== question) {
+                active.classList.remove("active");
+                active.nextElementSibling.style.maxHeight = 0;
+            }
+            question.classList.toggle("active");
+            const answer = question.nextElementSibling;
+            if (question.classList.contains("active")) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = 0;
+            }
+        });
+    });
+
+    // --- Script Hamburger Menu ---
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu au clic sur un lien
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Fermer le menu au clic en dehors
+        document.addEventListener('click', function(e) {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+
+   // --- Script Formulaire avec EmailJS ---
+    
+    // 🔑 Initialisation EmailJS
+    (function() {
+        emailjs.init("XOhcZR5b3aCiSDrzX"); // Remplacez par votre clé publique
+    })();
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupération du bouton
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Désactiver le bouton pendant l'envoi
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.style.opacity = '0.6';
+            
+            // Récupération de la valeur du sujet sélectionné
+            const subjectRadio = document.querySelector('input[name="subject"]:checked');
+            let subjectValue = 'Installation'; // Valeur par défaut
+            
+            if (subjectRadio) {
+                const subjectLabel = subjectRadio.nextElementSibling.textContent;
+                subjectValue = subjectLabel.trim();
+            }
+            
+            // Préparation des données pour EmailJS
+            const templateParams = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: subjectValue,
+                message: document.getElementById('message').value
+            };
+            
+            // Envoi via EmailJS
+            emailjs.send(
+                'service_hsmsdl',           // ✅ Votre Service ID
+                'template_j6f05sa',        // 📧 Remplacez par votre Template ID
+                templateParams
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                
+                // Message de succès
+                alert('✓ Votre message a été envoyé avec succès !\n\nNous vous répondrons dans les plus brefs délais.');
+                
+                // Réinitialiser le formulaire
+                contactForm.reset();
+                
+                // Réactiver le bouton
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+                submitBtn.style.opacity = '1';
+                
+            }, function(error) {
+                console.log('FAILED...', error);
+                
+                // Message d'erreur
+                alert('✗ Une erreur est survenue lors de l\'envoi.\n\nVeuillez réessayer ou nous contacter directement :\n📞 06 27 23 53 06\n📧 modelec81@gmail.com');
+                
+                // Réactiver le bouton
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+                submitBtn.style.opacity = '1';
+            });
+        });
+    }
+});
+</script>
+</body>
+</html>
