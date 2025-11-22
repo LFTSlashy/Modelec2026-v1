@@ -141,16 +141,57 @@
         <p>© 2024 Modelec - Électricien professionnel | Tous droits réservés</p>
     </footer>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXGZ38JWEZ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8S5HT6XKN"></script>
     <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
     <script>
+(function() {
+  'use strict';
 
+  // Vérifier si l'utilisateur a déjà fait un choix
+  if (localStorage.getItem('cookieConsent')) {
+    return;
+  }
 
+  // Créer la bannière
+  const banner = document.createElement('div');
+  banner.id = 'cookie-banner';
+  banner.innerHTML = `
+    <div style="position: fixed; bottom: 0; left: 0; right: 0; background: #1d1d1f; color: white; padding: 1.5rem; z-index: 9999; box-shadow: 0 -2px 10px rgba(0,0,0,0.1);">
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+        <p style="margin: 0; font-size: 0.95rem; flex: 1; min-width: 300px;">
+          🍪 Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic de notre site. En continuant, vous acceptez notre utilisation des cookies.
+        </p>
+        <div style="display: flex; gap: 1rem;">
+          <button id="cookie-accept" style="background: #D4FF00; color: #0052CC; border: none; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 600; cursor: pointer; font-size: 0.95rem;">
+            Accepter
+          </button>
+          <button id="cookie-refuse" style="background: transparent; color: white; border: 1px solid white; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 600; cursor: pointer; font-size: 0.95rem;">
+            Refuser
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(banner);
+
+  // Gérer les clics
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    banner.remove();
+  });
+
+  document.getElementById('cookie-refuse').addEventListener('click', function() {
+    localStorage.setItem('cookieConsent', 'refused');
+    banner.remove();
+    window['ga-disable-G-D8S5HT6XKN'] = true;
+  });
+})();
 
 window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-EXGZ38JWEZ');
+  gtag('config', 'G-D8S5HT6XKN');
   
             // --- Script Hamburger Menu ---
             const hamburger = document.querySelector('.hamburger');
